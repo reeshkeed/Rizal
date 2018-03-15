@@ -1,0 +1,207 @@
+#mainNav {
+  border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+  background-color: #fff;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#mainNav .navbar-brand {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #d84727;
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+#mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #f05f40;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+  font-size: .9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #212529;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+  color: #F05F40;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
+  color: #F05F40 !important;
+  background-color: transparent;
+}
+
+#mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover,
+#mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active:hover {
+  background-color: transparent;
+}
+.navbar{
+  z-index: 999;
+}
+.nav-icon{
+  height: 45px;
+  width: auto;
+  margin-right: 10px;
+}
+.parallax-container{
+  margin: 0;
+  background: #f9f9f9;
+  font-size: 24px;
+  width: 100%;
+  height: 400px;
+}
+.parallax{
+  padding: 200px 35px;
+  background: transparent;
+}
+.parallax-content{
+  z-index: 2;
+  position: relative;
+  color: #fff;
+}
+.video-container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  z-index: 1;
+}
+.video-container .overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(#067bc2, #fe4a49);
+  opacity: 0.5;
+}
+.front-text-container{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+.front-text-helper{
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+}
+.front-text{
+  height: 110px;
+  width: auto;
+  vertical-align: middle;
+}
+.article{
+  text-align: center;
+  text-shadow: 2px 2px #000000;
+}
+.heading{
+  text-align: center;
+}
+.sub-heading{
+  color: #424242;
+  font-size: 18px;
+}
+.lead{
+  font-size: 19px !important;
+}
+.page-content{
+  margin: 70px 330px;
+}
+.rizal-fam-pic{
+  height: 180;
+  width: auto;
+}
+.card{
+  margin-top: 40px;
+}
+.fam-tree{
+  margin-top: 70px;
+}
+.fam-tree span{
+  height: 0%;
+}
+.fam-tree img{
+  margin-top: 40px;
+}
+td{
+  width: 250px;
+}
+td, th{
+  text-align: center !important;
+  font-size: 18px;
+}
+.table-container{
+  margin: 70px 300px;
+}
+.table{
+  margin-top: 50px;
+}
+.jumbotron{
+  margin-bottom: 0px !important;
+  background-color: #535353 !important;
+  color: white;
+  margin-top: 30px !important;
+}
+.jumbotron img{
+  height: 100px;
+  width: auto;
+}
+
+
+@media (min-width: 992px) {
+  #mainNav {
+    border-color: transparent;
+    background-color: transparent;
+  }
+  #mainNav .navbar-brand {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+    color: #fff;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link {
+    padding: 0.5rem 1rem;
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #fff;
+  }
+  #mainNav.navbar-shrink {
+    border-bottom: 1px solid rgba(33, 37, 41, 0.1);
+    background-color: #2c2c2c;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    color: #F05F40;
+  }
+  #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
+    color: #f05f40;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
+    color: #fff;
+  }
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
+  #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
+    color: #F05F40;
+  }
+  .front-text{
+    height: 330px;
+    width: auto;
+  }
+}
