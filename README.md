@@ -1,5 +1,5 @@
 # Jose Rizal Website
-Website link: https://joserizalwebsite.herokuapp.com/index.html
+Website link: https://joserizalwebsite.herokuapp.com/
 
 This website contains information about Jose Rizal's life and works. It aims to help our fellow students and other people who need or having a research about Rizal's life.
 
