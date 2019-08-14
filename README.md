@@ -19,3 +19,21 @@ It contains the details of his different characteristics, his family, his travel
 [Paintings](http://www.joserizal.ph/pa01.html)<br/>
 [Paintings](http://www.joserizal.ph/pa01.html)<br/>
 [Rizal logo icon (Edited)](https://uixccelerate.wordpress.com/2011/06/20/vexel-and-vector-ph-celebrates-dr-jose-rizals-150th-birth-anniversary/)<br/>
+
+
+
+## Build Setup
+
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run serve
+
+# build for production with minification
+npm run build
+
+# build for production and view the bundle analyzer report
+npm run build --report
+```
