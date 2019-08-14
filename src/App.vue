@@ -53,16 +53,25 @@
         </div>
       </div>
     </nav>
-    <router-view/>
+    <router-view  v-on:scroll="handleScroll"/>
   </div>
 </template>
 
 <style lang="sass">
 @import "/assets/sass/app.sass"
 
-.navbar-brand, .nav-link
+.navbar-brand
+  font-size: 1.25rem
+  text-transform: uppercase
+  font-weight: 700
+
+.nav-link
   text-transform: uppercase
   font-weight: 600
+  margin-left: 0.7rem
+
+.dropdown-toggle
+  cursor: pointer
 
 </style>
 
@@ -71,8 +80,21 @@ import navItem from '../static/json/app.json'
 
 export default {
   data: () => ({
-    navItem
-  })
+    navItem,
+
+    scrolled: false
+  }),
+  methods: {
+    handleScroll () {
+      this.scrolled = window.scrollY > 0;
+    }
+  },
+  created () {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed () {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 }
 
 </script>
