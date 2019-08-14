@@ -11,7 +11,7 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <router-link class="nav-link" to="/">Home</router-link>
             </li>
@@ -59,6 +59,10 @@
 
 <style lang="sass">
 @import "/assets/sass/app.sass"
+
+.navbar-brand, .nav-link
+  text-transform: uppercase
+  font-weight: 600
 
 </style>
 
