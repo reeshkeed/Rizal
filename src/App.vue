@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">
-          <img src="/docs/4.3/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-          Bootstrap
-        </a>
+        <router-link class="navbar-brand" to="/">
+          <img src="../static/img/iconic.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          Jose Rizal
+        </router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -24,12 +24,7 @@
                 Biography
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link class="dropdown-item" to="/Biography">Family</router-link>
-                <router-link class="dropdown-item" to="/education">Education</router-link>
-                <router-link class="dropdown-item" to="/philosophies">Philosophies</router-link>
-                <router-link class="dropdown-item" to="/personalities">Personalities</router-link>
-                <router-link class="dropdown-item" to="/quotes">Quotes and Trivia</router-link>
-                <router-link class="dropdown-item" to="/foods">Foods</router-link>
+                <router-link class="dropdown-item" v-for="item in navItem" :to="item.link">{{ item.name }}</router-link>
               </div>
             </li>
 
@@ -38,10 +33,7 @@
                 Works
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link class="dropdown-item" to="/sculptures">Sculptures</router-link>
-                <router-link class="dropdown-item" to="/poems">Poems</router-link>
-                <router-link class="dropdown-item" to="/paintings">Paintings</router-link>
-                <router-link class="dropdown-item" to="/portfolio">Portfolio</router-link>
+                <router-link class="dropdown-item" v-for="item in navItem" :to="item.link">{{ item.name }}</router-link>
               </div>
             </li>
 
@@ -69,3 +61,14 @@
 @import "/assets/sass/app.sass"
 
 </style>
+
+<script>
+import navItem from '../static/json/app.json'
+
+export default {
+  data: () => ({
+    navItem
+  })
+}
+
+</script>
