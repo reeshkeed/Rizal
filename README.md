@@ -1,4 +1,4 @@
-# Jose Rizal Website V1
+# Jose Rizal Website V2
 
 Website link: https://joserizalwebsite.herokuapp.com/
 
