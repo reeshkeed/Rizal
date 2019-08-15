@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" :style="divStyle">
       <div class="container">
         <router-link class="navbar-brand" to="/">
           <img src="../static/img/iconic.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -53,12 +53,17 @@
         </div>
       </div>
     </nav>
-    <router-view  v-on:scroll="handleScroll"/>
+    <router-view/>
   </div>
 </template>
 
 <style lang="sass">
 @import "/assets/sass/app.sass"
+
+.navbar
+  -webkit-transition: all 0.2s
+  -moz-transition: all 0.2s
+  transition: all 0.2s
 
 .navbar-brand
   font-size: 1.25rem
@@ -84,18 +89,33 @@ export default {
     bioItem,
     worksItem,
 
-    scrolled: false
+    scrollY: 0
   }),
-  methods: {
-    handleScroll () {
-      this.scrolled = window.scrollY > 0;
+
+  mounted () {
+    window.addEventListener('scroll', this.onScroll, false)
+
+    this.onScroll()
+  },
+
+  beforeDestroy () {
+    window.removeEventListener('scroll', this.onScroll, false)
+  },
+
+  computed: {
+    divStyle () {
+      if (this.scrollY >= 300) {
+        return {
+          'background': 'black'
+        }
+      }
     }
   },
-  created () {
-    window.addEventListener('scroll', this.handleScroll);
-  },
-  destroyed () {
-    window.removeEventListener('scroll', this.handleScroll);
+
+  methods: {
+    onScroll () {
+      this.scrollY = window.scrollY
+    }
   }
 }
 
