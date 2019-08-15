@@ -77,18 +77,6 @@
   color: #fff
   font-weight: 500
 
-.navbar-toggler
-  border-color: 0
-
-.navbar-collapse
-  background-color: #fff
-  border-radius: 0.5rem
-  padding: 2rem 3rem
-
-.navbar-collapse > .navbar-nav > .nav-item > .nav-link
-  color: #444
-  margin-left: 0
-
 .dropdown-toggle
   cursor: pointer
 
