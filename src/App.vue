@@ -2,8 +2,8 @@
   <div id="app">
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark" :class="{ 'scrolled': hasScrolled }">
       <div class="container">
-        <router-link class="navbar-brand" to="/">
-          <img src="../static/img/iconic.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        <router-link class="navbar-brand v-centered" to="/">
+          <img src="../static/img/iconic.png" class="d-inline-block align-top navbar-logo" alt="">
           Jose Rizal
         </router-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,30 +60,36 @@
 <style lang="sass">
 @import "/assets/sass/app.sass"
 
-.navbar
-  -webkit-transition: all 0.2s
-  -moz-transition: all 0.2s
-  transition: all 0.2s
+.navbar-logo
+  height: 3rem
+  margin-right: 1rem
 
 .navbar-brand
-  font-size: 1.25rem
+  font-size: 1.3rem
   text-transform: uppercase
   font-weight: 700
 
 .nav-link
-  text-transform: uppercase
-  font-weight: 600
+  font-weight: 400
   margin-left: 0.7rem
+
+.nav-link.router-link-exact-active.router-link-active
+  color: #fff
+  font-weight: 500
 
 .dropdown-toggle
   cursor: pointer
 
 .scrolled
-  background-image: linear-gradient(to right, rgb(255, 87, 34), rgb(255, 87, 34))
+  background-image: linear-gradient(to right, #c65c34, #e46216)
   box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)
 
-.scrolled.navbar-brand
-  color: red
+.scrolled > .container > .navbar-brand
+  font-size: 1.2rem
+
+.scrolled > .container > .navbar-brand > .navbar-logo
+  height: 2.5rem
+  margin-right: 0.5rem
 
 </style>
 
