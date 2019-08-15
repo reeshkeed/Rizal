@@ -8,8 +8,11 @@
   background-repeat: no-repeat
   background-size: cover
   background-attachment: fixed
-  border-bottom-left-radius: 50% 10%
-  border-bottom-right-radius: 50% 10%
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 8vw))
 
 .bg-rizal
-  background-image: url("../static/img/rizal-law.jpg")
+  background-image: linear-gradient(to bottom, rgba(255, 87, 34, 0.65), rgba(255, 87, 34, 0.18)), url("../static/img/rizal-law.jpg")
+
+.display-4
+	color: #fff
+	font-weight: 400

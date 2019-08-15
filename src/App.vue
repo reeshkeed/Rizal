@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" :style="divStyle">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" :class="{ 'scrolled': hasScrolled }">
       <div class="container">
         <router-link class="navbar-brand" to="/">
           <img src="../static/img/iconic.png" width="30" height="30" class="d-inline-block align-top" alt="">
@@ -78,6 +78,13 @@
 .dropdown-toggle
   cursor: pointer
 
+.scrolled
+  background-image: linear-gradient(to right, rgb(255, 87, 34), rgb(255, 87, 34))
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)
+
+.scrolled.navbar-brand
+  color: red
+
 </style>
 
 <script>
@@ -103,12 +110,8 @@ export default {
   },
 
   computed: {
-    divStyle () {
-      if (this.scrollY >= 300) {
-        return {
-          'background': 'black'
-        }
-      }
+    hasScrolled () {
+      return this.scrollY >= 100
     }
   },
 
