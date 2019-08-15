@@ -62,6 +62,9 @@
       height: 10rem
 
   @media (max-width: 400px)
+    .navbar-logo
+      margin-right: 0.4rem
+
     .front-text
       height: 7rem
 
