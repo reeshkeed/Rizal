@@ -27,25 +27,5 @@
   {
     "name": "Foods",
     "link": "/foods"
-  },
-
-  {
-    "name": "Sculptures",
-    "link": "/sculptures"
-  },
-
-  {
-    "name": "Poems",
-    "link": "/poems"
-  },
-
-  {
-    "name": "Paintings",
-    "link": "/paintings"
-  },
-
-  {
-    "name": "Portfolio",
-    "link": "/portfolio"
   }
 ]

@@ -24,7 +24,7 @@
                 Biography
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link class="dropdown-item" v-for="item in navItem" :to="item.link">{{ item.name }}</router-link>
+                <router-link class="dropdown-item" v-for="item in bioItem" :to="item.link">{{ item.name }}</router-link>
               </div>
             </li>
 
@@ -33,7 +33,7 @@
                 Works
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <router-link class="dropdown-item" v-for="item in navItem" :to="item.link">{{ item.name }}</router-link>
+                <router-link class="dropdown-item" v-for="item in worksItem" :to="item.link">{{ item.name }}</router-link>
               </div>
             </li>
 
@@ -76,11 +76,13 @@
 </style>
 
 <script>
-import navItem from '../static/json/app.json'
+import bioItem from '../static/json/dropdown/bio.json'
+import worksItem from '../static/json/dropdown/works.json'
 
 export default {
   data: () => ({
-    navItem,
+    bioItem,
+    worksItem,
 
     scrolled: false
   }),
