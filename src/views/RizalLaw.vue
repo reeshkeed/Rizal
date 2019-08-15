@@ -8,23 +8,10 @@
     </div>
 
     <div class="container">
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
-      <h1>h1. Bootstrap heading</h1>
+      <h2 class="sub-title text-center">
+        RA 1425
+        <small class="text-muted">(House Bill No. 5561, Senate Bill No. 438)</small>
+      </h2>
     </div>
   </div>
 

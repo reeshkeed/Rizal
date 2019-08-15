@@ -1,3 +1,5 @@
+$linear: linear-gradient(to bottom, rgba(230, 130, 27, 0.55), rgba(230, 130, 27, 0.55))
+
 *
 	-webkit-transition: all 0.2s
   -moz-transition: all 0.2s
@@ -8,15 +10,12 @@
 	align-items: center
 
 .jumbotron
-  height: 30rem
-  background-position: center
+  height: 35rem
+  background-position: bottom
   background-repeat: no-repeat
   background-size: cover
   background-attachment: fixed
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw))
-
-.bg-rizal
-  background-image: linear-gradient(to bottom, rgba(230, 130, 27, 0.55), rgba(230, 130, 27, 0.55)), url("../static/img/rizal-law.jpg")
 
 .display-4
 	color: #fff
@@ -24,7 +23,8 @@
 	text-transform: uppercase
 	text-shadow: 5px 4px 1px rgba(32, 33, 36, 0.28)
 
-
+.sub-title
+	font-size:
 
 @media (max-width: 991px)
 	.navbar-toggler
@@ -44,5 +44,8 @@
 		height: 10rem
 
 @media (max-width: 400px)
-	.front-text
-		height: 7rem
+	.jumbotron
+		height: 20rem
+
+	.display-4
+		font-size: 2.5rem

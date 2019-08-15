@@ -1,6 +1,17 @@
 <template>
   <div class="lovelife">
-    <h1>This is an lovelife page</h1>
+    <div class="jumbotron v-centered bg-lovelife">
+      <div class="jumbotron-overlay"></div>
+      <div class="container">
+        <h1 class="display-4 text-center">Lovelife</h1>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2 class="sub-title text-center">
+        Subtitle
+      </h2>
+    </div>
   </div>
 
 </template>
