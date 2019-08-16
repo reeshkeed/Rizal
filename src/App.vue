@@ -54,19 +54,57 @@
       </div>
     </nav>
 
+    <!-- Render Views -->
     <router-view/>
 
-    <div class="jumbotron jumbotron-fluid text-center">
-      <div class="container">
-        <span class="front-text-helper"></span><img class="front-text" src="../static/img/iconic.png" alt="">
-        <p class="lead">This website are for educational purposes only.<br>2017-2018</p>
+      <!-- Footer -->
+    <div v-if="$route.meta.showFooter">
+      <div class="footer bg-light">
+        <div class="container">
+          <div class="row v-centered">
+            <div class="col-lg-4 text-center">
+              <img class="footer-logo" src="../static/img/iconic.png" alt="">
+              <p class="footer-disclaimer">This website are for educational purposes only.<br>2017-2018</p>
+            </div>
+            <div class="col-lg text-right">
+              <div class="row">
+                <div class="col-lg col-md col-4">
+                  <p class="footer-subtitle">General</p>
+                  <router-link class="footer-link" to="/">Home</router-link>
+                  <router-link class="footer-link" to="/rizal_law">Rizal Law</router-link>
+                  <router-link class="footer-link" to="/lovelife">Lovelife</router-link>
+                  <router-link class="footer-link" to="/travels">Travels</router-link>
+                  <router-link class="footer-link" to="/people">People</router-link>
+                  <router-link class="footer-link" to="/about">About</router-link>
+                </div>
+                <div class="col-lg col-md col-4">
+                  <p class="footer-subtitle">Biography</p>
+                  <router-link class="footer-link" v-for="item in bioItem" :to="item.link">{{ item.name }}</router-link>
+                </div>
+                <div class="col-lg col-md col-4">
+                  <p class="footer-subtitle">Works</p>
+                  <router-link class="footer-link" v-for="item in worksItem" :to="item.link">{{ item.name }}</router-link>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="container">
+          <p class="footer-caption" alt="Girish Daloso">© Girish Daloso</p>
+          <a class="footer-icon" href="https://www.linkedin.com/in/girishdaloso/" target="_blank"><span class="icon-github">asdasd</span></a>
+        </div>
       </div>
     </div>
+
   </div>
 </template>
 
 <style lang="sass">
 @import "/assets/sass/app.sass"
+@import "/assets/style.css"
 
 .navbar-logo
   height: 3rem
@@ -98,6 +136,47 @@
 .scrolled > .container > .navbar-brand > .navbar-logo
   height: 2.5rem
   margin-right: 0.5rem
+
+.footer
+  margin-top: 4rem
+  padding: 3rem 0
+
+.footer-logo
+  width: 7rem
+
+.footer-subtitle
+  color: #444
+  text-transform: uppercase
+  font-weight: 700
+
+.footer-link
+  display: block
+  color: #8e8e8e
+  text-decoration: none
+  font-weight: 200
+
+.footer-link:hover
+  text-decoration: none
+  color: #c65c34
+
+.footer-disclaimer
+  font-size: 0.9rem
+
+.footer-copyright
+  padding: 1rem 0
+  background: #eceef1
+
+.footer-caption
+  margin-bottom: 0
+
+.footer-icon
+  height: 2rem
+  color: red
+
+.footer-link.router-link-exact-active.router-link-active
+  color: #c65c34
+  font-weight: 500
+
 
 </style>
 

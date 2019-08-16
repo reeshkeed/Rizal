@@ -24,82 +24,98 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home
+      component: Home,
+      meta: { showFooter: false }
     },
     {
       path: '/rizal_law',
       name: 'rizallaw',
-      component: RizalLaw
+      component: RizalLaw,
+      meta: { showFooter: true }
     },
     {
       path: '/biography',
       name: 'biography',
-      component: Biography
+      component: Biography,
+      meta: { showFooter: true }
     },
     {
       path: '/education',
       name: 'education',
-      component: Education
+      component: Education,
+      meta: { showFooter: true }
     },
     {
       path: '/philosophies',
       name: 'philosophies',
-      component: Philosophies
+      component: Philosophies,
+      meta: { showFooter: true }
     },
     {
       path: '/personalities',
       name: 'personalities',
-      component: Personalities
+      component: Personalities,
+      meta: { showFooter: true }
     },
     {
       path: '/quotes',
       name: 'qoutes',
-      component: Quotes
+      component: Quotes,
+      meta: { showFooter: true }
     },
     {
       path: '/foods',
       name: 'foods',
-      component: Foods
+      component: Foods,
+      meta: { showFooter: true }
     },
     {
       path: '/sculptures',
       name: 'sculptures',
-      component: Sculptures
+      component: Sculptures,
+      meta: { showFooter: true }
     },
     {
       path: '/poems',
       name: 'poems',
-      component: Poems
+      component: Poems,
+      meta: { showFooter: true }
     },
     {
       path: '/paintings',
       name: 'paintings',
-      component: Paintings
+      component: Paintings,
+      meta: { showFooter: true }
     },
     {
       path: '/portfolio',
       name: 'portfolio',
-      component: Portfolio
+      component: Portfolio,
+      meta: { showFooter: true }
     },
     {
       path: '/lovelife',
       name: 'lovelife',
-      component: Lovelife
+      component: Lovelife,
+      meta: { showFooter: true }
     },
     {
       path: '/travels',
       name: 'travels',
-      component: Travels
+      component: Travels,
+      meta: { showFooter: true }
     },
     {
       path: '/people',
       name: 'people',
-      component: People
+      component: People,
+      meta: { showFooter: true }
     },
     {
       path: '/about',
       name: 'about',
-      component: About
+      component: About,
+      meta: { showFooter: true }
     }
   ]
 })
