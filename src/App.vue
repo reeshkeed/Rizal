@@ -58,43 +58,26 @@
     <router-view/>
 
       <!-- Footer -->
-    <div v-if="$route.meta.showFooter">
-      <div class="footer bg-light">
-        <div class="container">
-          <div class="row v-centered">
-            <div class="col-lg-4 text-center">
-              <img class="footer-logo" src="../static/img/iconic.png" alt="">
-              <p class="footer-disclaimer">This website are for educational purposes only.<br>2017-2018</p>
-            </div>
-            <div class="col-lg text-right">
-              <div class="row">
-                <div class="col-lg col-md col-4">
-                  <p class="footer-subtitle">General</p>
-                  <router-link class="footer-link" to="/">Home</router-link>
-                  <router-link class="footer-link" to="/rizal_law">Rizal Law</router-link>
-                  <router-link class="footer-link" to="/lovelife">Lovelife</router-link>
-                  <router-link class="footer-link" to="/travels">Travels</router-link>
-                  <router-link class="footer-link" to="/people">People</router-link>
-                  <router-link class="footer-link" to="/about">About</router-link>
-                </div>
-                <div class="col-lg col-md col-4">
-                  <p class="footer-subtitle">Biography</p>
-                  <router-link class="footer-link" v-for="item in bioItem" :to="item.link">{{ item.name }}</router-link>
-                </div>
-                <div class="col-lg col-md col-4">
-                  <p class="footer-subtitle">Works</p>
-                  <router-link class="footer-link" v-for="item in worksItem" :to="item.link">{{ item.name }}</router-link>
-                </div>
-              </div>
-            </div>
+    <div class="footer" v-if="$route.meta.showFooter">
+      <div class="footer-main bg-light">
+        <div class="container text-center">
+          <img class="footer-logo" src="../static/img/iconic.png" alt="">
+          <div class="footer-disclaimer">
+            <p>This website are for educational purposes only.</p>
+            <p>Created 2018</p>
+            <p>Updated 2019</p>
           </div>
         </div>
       </div>
 
       <div class="footer-copyright">
         <div class="container">
-          <p class="footer-caption" alt="Girish Daloso">© Girish Daloso</p>
-          <a class="footer-icon" href="https://www.linkedin.com/in/girishdaloso/" target="_blank"><span class="icon-github">asdasd</span></a>
+          <a class="footer-caption" href="https://girishdaloso.me/" target="_blank" alt="Girish Daloso">© Girish Daloso</a>
+          <div>
+            <a class="footer-icon" href="https://github.com/reeshkeed" target="_blank"><span class="icon-github"></span></a>
+            <a class="footer-icon" href="https://www.linkedin.com/in/girishdaloso/" target="_blank"><span class="icon-linkedin"></span></a>
+            <a class="footer-icon" href="https://twitter.com/reeshkeed" target="_blank"><span class="icon-twitter"></span></a>
+          </div>
         </div>
       </div>
     </div>
@@ -103,8 +86,8 @@
 </template>
 
 <style lang="sass">
-@import "/assets/sass/app.sass"
-@import "/assets/style.css"
+@import "assets/sass/app.sass"
+@import "../static/style.css"
 
 .navbar-logo
   height: 3rem
@@ -139,39 +122,35 @@
 
 .footer
   margin-top: 4rem
-  padding: 3rem 0
+
+.footer p
+  margin-bottom: 0
+
+.footer-main
+  padding: 4rem 0
 
 .footer-logo
   width: 7rem
 
-.footer-subtitle
-  color: #444
-  text-transform: uppercase
-  font-weight: 700
-
-.footer-link
-  display: block
-  color: #8e8e8e
-  text-decoration: none
-  font-weight: 200
-
-.footer-link:hover
-  text-decoration: none
-  color: #c65c34
-
-.footer-disclaimer
+.footer-disclaimer > p
   font-size: 0.9rem
+  margin-bottom: 0.2rem
 
 .footer-copyright
-  padding: 1rem 0
+  padding: 2rem 0
   background: #eceef1
 
 .footer-caption
-  margin-bottom: 0
+  color: #444
 
 .footer-icon
-  height: 2rem
-  color: red
+  font-size: 1.4rem
+  margin-right: 0.6rem
+  color: #8e8e8e
+
+.footer-caption:hover, .footer-icon:hover
+  text-decoration: none
+  color: #444
 
 .footer-link.router-link-exact-active.router-link-active
   color: #c65c34
