@@ -18,7 +18,9 @@ $linear: linear-gradient(to bottom, rgba(230, 130, 27, 0.55), rgba(230, 130, 27,
   background-repeat: no-repeat
   background-size: cover
   background-attachment: fixed
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw))
+
+.slant-left
+	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 6vw))
 
 .display-4
 	color: #fff
@@ -41,13 +43,18 @@ $linear: linear-gradient(to bottom, rgba(230, 130, 27, 0.55), rgba(230, 130, 27,
 	font-weight: 400
 
 .card
-	width: 18rem
+	margin-bottom: 2rem
 
 .card-title
 	font-weight: 600
 
 span.text-muted
 	font-size: 1rem
+
+.hero
+	margin: 3rem 0
+	padding-top: 5rem
+	padding-bottom: 10rem
 
 @media (max-width: 991px)
 	.navbar-toggler

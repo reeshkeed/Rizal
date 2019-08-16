@@ -53,7 +53,15 @@
         </div>
       </div>
     </nav>
+
     <router-view/>
+
+    <div class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <span class="front-text-helper"></span><img class="front-text" src="../static/img/iconic.png" alt="">
+        <p class="lead">This website are for educational purposes only.<br>2017-2018</p>
+      </div>
+    </div>
   </div>
 </template>
 
