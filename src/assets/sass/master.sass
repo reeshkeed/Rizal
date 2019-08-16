@@ -1,6 +1,8 @@
+//*** Gradient Color for Pages Cover ***//
 $linear: linear-gradient(to bottom, rgba(230, 130, 27, 0.55), rgba(230, 130, 27, 0.55))
 
 *
+	font-family: 'Public Sans webfont'
 	-webkit-transition: all 0.2s
   -moz-transition: all 0.2s
   transition: all 0.2s
@@ -23,8 +25,22 @@ $linear: linear-gradient(to bottom, rgba(230, 130, 27, 0.55), rgba(230, 130, 27,
 	text-transform: uppercase
 	text-shadow: 5px 4px 1px rgba(32, 33, 36, 0.28)
 
-.sub-title
-	font-size:
+.wrapper
+	margin-bottom: 2rem
+
+.wrapper > h3
+	font-size: 1.5rem
+	font-weight: 600
+	margin-top: 3rem
+
+.wrapper > h6
+	font-weight: 700
+
+.wrapper > .text-muted
+	font-weight: 400
+
+.wrapper > p
+	font-weight: 300
 
 @media (max-width: 991px)
 	.navbar-toggler
@@ -39,13 +55,17 @@ $linear: linear-gradient(to bottom, rgba(230, 130, 27, 0.55), rgba(230, 130, 27,
 	  color: #444
 	  margin-left: 0
 
+	.subtitle
+		font-size: 1.6rem
+
 @media (max-width: 700px)
-	.front-text
-		height: 10rem
+	.display-4
+		font-size: 2.2rem
+
+	.subtitle
+		font-size: 1.3rem
 
 @media (max-width: 400px)
-	.jumbotron
-		height: 20rem
 
-	.display-4
-		font-size: 2.5rem
+	.jumbotron
+		height: 25rem

@@ -9,7 +9,8 @@
     </div>
 
     <div class="front-text-container">
-      <span class="front-text-helper"></span><img class="front-text" src="../../static/img/front_pic.png" alt="">
+      <span class="front-text-helper"></span>
+      <img class="front-text" src="../../static/img/front_pic.png" alt="">
     </div>
   </div>
 </template>
