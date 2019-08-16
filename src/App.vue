@@ -64,8 +64,7 @@
           <img class="footer-logo" src="../static/img/iconic.png" alt="">
           <div class="footer-disclaimer">
             <p>This website are for educational purposes only.</p>
-            <p>Created 2018</p>
-            <p>Updated 2019</p>
+            <p>Created 2018 - Updated 2019</p>
           </div>
         </div>
       </div>
@@ -94,9 +93,9 @@
   margin-right: 1rem
 
 .navbar-brand
-  font-size: 1.3rem
+  font-size: 1.5rem
   text-transform: uppercase
-  font-weight: 700
+  font-weight: 800
 
 .nav-link
   font-weight: 400
@@ -110,15 +109,16 @@
   cursor: pointer
 
 .scrolled
-  background-image: linear-gradient(to right, #c65c34, #e46216)
+  background: #3097D1
   box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28)
+  color: red
 
 .scrolled > .container > .navbar-brand
-  font-size: 1.2rem
+  font-size: 1.3rem
 
 .scrolled > .container > .navbar-brand > .navbar-logo
   height: 2.5rem
-  margin-right: 0.5rem
+  margin-right: 0.7rem
 
 .footer
   margin-top: 4rem
@@ -150,11 +150,7 @@
 
 .footer-caption:hover, .footer-icon:hover
   text-decoration: none
-  color: #444
-
-.footer-link.router-link-exact-active.router-link-active
-  color: #c65c34
-  font-weight: 500
+  color: #3097D1
 
 
 </style>
