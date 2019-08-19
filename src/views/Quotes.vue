@@ -1,6 +1,6 @@
 <template>
   <div class="quotes">
-    <div class="jumbotron v-centered bg-qoutes">
+    <div class="jumbotron v-centered slant-left bg-qoutes">
       <div class="jumbotron-overlay"></div>
       <div class="container">
         <h1 class="display-4 text-center">Qoutes and Trivia</h1>

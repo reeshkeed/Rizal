@@ -7,7 +7,6 @@ import Education from './views/Education.vue'
 import Philosophies from './views/Philosophies.vue'
 import Personalities from './views/Personalities.vue'
 import Quotes from './views/Quotes.vue'
-import Foods from './views/Foods.vue'
 import Sculptures from './views/Sculptures.vue'
 import Poems from './views/Poems.vue'
 import Paintings from './views/Paintings.vue'
@@ -61,12 +60,6 @@ export default new Router({
       path: '/quotes',
       name: 'qoutes',
       component: Quotes,
-      meta: { showFooter: true }
-    },
-    {
-      path: '/foods',
-      name: 'foods',
-      component: Foods,
       meta: { showFooter: true }
     },
     {
