@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Saturnina Rizal",
+    "material": "Material: Oil",
+    "remarks": "Remarks: Now in Rizal Shrine in Fort Santiago",
+    "buttonId": "#saturnina",
+    "modalId": "saturnina"
+  },
+  {
+    "name": "Dapitan Church Curtains",
+    "material": "Material: Oil",
+    "remarks": "Remarks: Made in Dapitan, 1894",
+    "buttonId": "#curtains",
+    "modalId": "curtains"
+  },
+  {
+    "name": "A painting on a pair of mother-of-pearl",
+    "material": "Material: Oil",
+    "remarks": "Remarks: Shells painted by Rizal in Dapitan and given as a gift to Dona Leonor Valenzuela and later passed into the hands of Dona Margarita Valenzuela.",
+    "buttonId": "#mother",
+    "modalId": "mother"
+  },
+  {
+    "name": "Spanish Coat of Arms",
+    "material": "Material: Water Color",
+    "remarks": "Remarks: Done during a fiesta of San Rafael in Calamba in 1867",
+    "buttonId": "#arms",
+    "modalId": "arms"
+  },
+  {
+    "name": "Christ Crucified",
+    "material": "Material: Crayon",
+    "remarks": "Remarks: 1875",
+    "buttonId": "#christ",
+    "modalId": "christ"
+  },
+  {
+    "name": "Immaculate Conception",
+    "material": "Material: Crayon",
+    "remarks": "Remarks: Made in Manila, 1974",
+    "buttonId": "#conception",
+    "modalId": "conception"
+  }
+]
