@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Triumph of death over life",
+    "material": "Material: Clay",
+    "remarks": "Remarks: Given to Dr. Blumentritt in 1890 in Brussels",
+    "thumbnail": "../../static/img/sculptures/thumbnails/triumph.png",
+    "image": "../../static/img/sculptures/triumph.jpg",
+    "buttonId": "#triumph",
+    "modalId": "triumph"
+  },
+  {
+    "name": "Bust of Father Jose Guerrico",
+    "material": "Material: Clay",
+    "remarks": "Remarks: Made in Dapitan, 1894",
+    "thumbnail": "../../static/img/sculptures/thumbnails/guerrico.png",
+    "image": "../../static/img/sculptures/guerrico.jpg",
+    "buttonId": "#guerrico",
+    "modalId": "guerrico"
+  }
+]
