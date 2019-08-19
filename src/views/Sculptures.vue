@@ -12,36 +12,35 @@
         <h3>Some of Rizal's Sculptures</h3>
       </div>
 
-      <div v-for="sculpture in sculptures">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-sm-6">
-            <div class="card">
-              <img v-bind:src="sculpture.thumbnail" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">{{ sculpture.name }}</h5>
-                <p>
-                  {{ sculpture.material }}<br>
-                  {{ sculpture.remarks }}
-                </p>
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-info" data-toggle="modal" v-bind:data-target="sculpture.buttonId">
-                  View Image
-                </button>
-              </div>
+
+      <div class="row">
+        <div class="col-lg-4 col-md-6 col-sm-6" v-for="sculpture in sculptures">
+          <div class="card">
+            <img v-bind:src="require(`../../static/img/sculptures/thumbnails/${sculpture.modalId}.png`)" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">{{ sculpture.name }}</h5>
+              <p>
+                {{ sculpture.material }}<br>
+                {{ sculpture.remarks }}
+              </p>
+              <!-- Button trigger modal -->
+              <button type="button" class="btn btn-info" data-toggle="modal" v-bind:data-target="sculpture.buttonId">
+                View Image
+              </button>
             </div>
           </div>
         </div>
+      </div>
 
-        <!-- Modal -->
-        <div class="modal fade" v-bind:id="sculpture.modalId" tabindex="-1" role="dialog" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-centered" role="document">
-            <div class="modal-content">
-              <div class="modal-body">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-                <img v-bind:src="sculpture.image" class="card-img-top" alt="...">
-              </div>
+      <!-- Modal -->
+      <div class="modal fade" v-for="sculpture in sculptures" v-bind:id="sculpture.modalId" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+              <img v-bind:src="require(`../../static/img/sculptures/${sculpture.modalId}.jpg`)" class="card-img-top" alt="...">
             </div>
           </div>
         </div>
