@@ -12,19 +12,18 @@
         <h3>Some of Rizal's Sculptures</h3>
       </div>
 
-
       <div class="row">
         <div class="col-lg-4 col-md-6 col-sm-6" v-for="sculpture in sculptures">
           <div class="card">
             <img v-bind:src="require(`../../static/img/sculptures/thumbnails/${sculpture.modalId}.png`)" class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
               <h5 class="card-title">{{ sculpture.name }}</h5>
               <p>
                 {{ sculpture.material }}<br>
                 {{ sculpture.remarks }}
               </p>
               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-info" data-toggle="modal" v-bind:data-target="sculpture.buttonId">
+              <button type="button" class="btn btn-outline-info btn-block mt-auto" data-toggle="modal" v-bind:data-target="sculpture.buttonId">
                 View Image
               </button>
             </div>
@@ -52,7 +51,8 @@
 </template>
 
 <style lang="sass">
-
+.card
+  height: 95%
 </style>
 
 <script>
@@ -63,5 +63,4 @@ export default {
     sculptures
   })
 }
-
 </script>
