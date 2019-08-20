@@ -1,79 +1,68 @@
 [
   {
+    "id": "triumph",
     "name": "Triumph of death over life",
     "material": "Material: Clay",
-    "remarks": "Remarks: Given to Dr. Blumentritt in 1890 in Brussels",
-    "buttonId": "#triumph",
-    "modalId": "triumph"
+    "remarks": "Remarks: Given to Dr. Blumentritt in 1890 in Brussels"
   },
   {
+    "id": "guerrico",
     "name": "Bust of Father Jose Guerrico",
     "material": "Material: Clay",
-    "remarks": "Remarks: Made in Dapitan, 1894",
-    "buttonId": "#guerrico",
-    "modalId": "guerrico"
+    "remarks": "Remarks: Made in Dapitan, 1894"
   },
   {
+    "id": "dapitana",
     "name": "Oyang Dapitana",
     "material": "Material: Clay",
-    "remarks": "Remarks: Made in Dapitan in 1893 - 1894",
-    "buttonId": "#dapitana",
-    "modalId": "dapitana"
+    "remarks": "Remarks: Made in Dapitan in 1893 - 1894"
   },
   {
+    "id": "dapitan",
     "name": "Model head of a Dapitan girl",
     "material": "Material: Clay",
-    "remarks": "Remarks: Made in Dapitan",
-    "buttonId": "#dapitan",
-    "modalId": "dapitan"
+    "remarks": "Remarks: Made in Dapitan"
   },
   {
+    "id": "jesus",
     "name": "Sacred heart of Jesus",
     "material": "Material: Wood",
-    "remarks": "Remarks: Made in Ateneo de Manila in 1875 - 1877",
-    "buttonId": "#jesus",
-    "modalId": "jesus"
+    "remarks": "Remarks: Made in Ateneo de Manila in 1875 - 1877"
   },
   {
+    "id": "composite",
     "name": "Composite statuette (nude lady lying down)",
     "material": "Material: Terra Cotta",
-    "remarks": "Remarks: Molded in Brussels in 1890",
-    "buttonId": "#composite",
-    "modalId": "composite"
+    "remarks": "Remarks: Molded in Brussels in 1890"
   },
   {
+    "id": "revenge",
     "name": "Mother's revenge",
     "material": "Material: Clay",
-    "remarks": "Remarks: Made in Dapitan in 1894",
-    "buttonId": "#revenge",
-    "modalId": "revenge"
+    "remarks": "Remarks: Made in Dapitan in 1894"
   },
   {
+    "id": "bracken",
     "name": "Josephine Bracken (medallion)",
     "material": "Material: Wood",
-    "remarks": "Remarks: Made in Dapitan in 1895 - 1896",
-    "buttonId": "#bracken",
-    "modalId": "bracken"
+    "remarks": "Remarks: Made in Dapitan in 1895 - 1896"
   },
   {
+    "id": "mercado",
     "name": "Dr. Francisco Mercado (bust)",
     "material": "Material: Wood",
-    "remarks": "Remarks: Life-size. Made Calamaba in 1887 - 1888",
-    "buttonId": "#mercado",
-    "modalId": "mercado"
+    "remarks": "Remarks: Life-size. Made Calamaba in 1887 - 1888"
   },
   {
+    "id": "bound",
     "name": "Prometheus bound",
     "material": "Material: Clay",
-    "remarks": "Remarks: Given to Dr. Blumentritt in 18909 in Brussels",
-    "buttonId": "#bound",
-    "modalId": "bound"
+    "remarks": "Remarks: Given to Dr. Blumentritt in 18909 in Brussels"
   },
   {
+    "id": "boar",
     "name": "Wild boar",
     "material": "Material: Clay",
-    "remarks": "Remarks: Made in Dapitan",
-    "buttonId": "#boar",
-    "modalId": "boar"
+    "remarks": "Remarks: Made in Dapitan"
   }
 ]
