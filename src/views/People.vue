@@ -274,7 +274,7 @@
   </div>
 </template>
 
-<style lang="sass">
+<style scoped lang="sass">
 .table
   margin-bottom: 3rem
 

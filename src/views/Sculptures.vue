@@ -50,11 +50,6 @@
   </div>
 </template>
 
-<style lang="sass">
-.card
-  height: 95%
-</style>
-
 <script>
 import sculptures from '../../static/json/sculptures.json'
 

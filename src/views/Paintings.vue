@@ -49,11 +49,6 @@
   </div>
 </template>
 
-<style lang="sass">
-.card
-  height: 95%
-</style>
-
 <script>
 import paintings from '../../static/json/paintings.json'
 

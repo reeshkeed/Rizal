@@ -190,7 +190,7 @@
   </div>
 </template>
 
-<style lang="sass">
+<style scoped lang="sass">
 .card
   border: 0
   margin-bottom: 3rem !important
