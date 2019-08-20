@@ -76,4 +76,10 @@
 
   .wrapper h6
     margin: 2rem 0 0 0
+
+  .wrapper p
+    color: #6f6f6f
+
+  .wrapper a
+    color: #3097D1
 </style>
