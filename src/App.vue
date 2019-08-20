@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" :class="{ 'scrolled': hasScrolled }" @click="toggleMenu">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" :class="{ 'scrolled': hasScrolled }">
       <div class="container">
         <router-link class="navbar-brand v-centered" to="/">
           <img src="../static/img/iconic.png" class="d-inline-block align-top navbar-logo" alt="">
@@ -10,7 +10,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent" :class="{ 'active': menuVisible }">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent"  @click="toggleMenu" :class="{ 'active': menuVisible }">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <router-link class="nav-link" to="/">Home</router-link>
