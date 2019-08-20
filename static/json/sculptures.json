@@ -1,7 +1,7 @@
 [
   {
-    "id": "triumph",
-    "name": "Triumph of death over life",
+    "id": "death",
+    "name": "Triumph of Death Over Life",
     "material": "Material: Clay",
     "remarks": "Remarks: Given to Dr. Blumentritt in 1890 in Brussels"
   },
@@ -19,31 +19,31 @@
   },
   {
     "id": "dapitan",
-    "name": "Model head of a Dapitan girl",
+    "name": "Model head of a Dapitan Girl",
     "material": "Material: Clay",
     "remarks": "Remarks: Made in Dapitan"
   },
   {
     "id": "jesus",
-    "name": "Sacred heart of Jesus",
+    "name": "Sacred Heart of Jesus",
     "material": "Material: Wood",
     "remarks": "Remarks: Made in Ateneo de Manila in 1875 - 1877"
   },
   {
     "id": "composite",
-    "name": "Composite statuette (nude lady lying down)",
+    "name": "Composite Statuette (Nude lady lying down)",
     "material": "Material: Terra Cotta",
     "remarks": "Remarks: Molded in Brussels in 1890"
   },
   {
     "id": "revenge",
-    "name": "Mother's revenge",
+    "name": "Mother's Revenge",
     "material": "Material: Clay",
     "remarks": "Remarks: Made in Dapitan in 1894"
   },
   {
     "id": "bracken",
-    "name": "Josephine Bracken (medallion)",
+    "name": "Josephine Bracken (Medallion)",
     "material": "Material: Wood",
     "remarks": "Remarks: Made in Dapitan in 1895 - 1896"
   },
