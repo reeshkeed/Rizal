@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" :class="{ 'scrolled': hasScrolled }">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark" :class="{ 'scrolled': hasScrolled }" @click="toggleMenu">
       <div class="container">
         <router-link class="navbar-brand v-centered" to="/">
           <img src="../static/img/iconic.png" class="d-inline-block align-top navbar-logo" alt="">
@@ -10,7 +10,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" :class="{ 'active': menuVisible }">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
               <router-link class="nav-link" to="/">Home</router-link>
@@ -164,7 +164,8 @@ export default {
     bioItem,
     worksItem,
 
-    scrollY: 0
+    scrollY: 0,
+    menuVisible: false
   }),
 
   mounted () {
@@ -186,6 +187,10 @@ export default {
   methods: {
     onScroll () {
       this.scrollY = window.scrollY
+    },
+
+    toggleMenu () {
+      this.menuVisible = !this.menuVisible
     }
   }
 }
