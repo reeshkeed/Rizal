@@ -137,14 +137,14 @@
   margin-bottom: 0.2rem
 
 .footer-copyright
-  padding: 2rem 0
+  padding: 1.2rem 0
   background: #eceef1
 
 .footer-caption
   color: #444
 
 .footer-icon
-  font-size: 1.4rem
+  font-size: 1.1rem
   margin-right: 0.6rem
   color: #8e8e8e
 
