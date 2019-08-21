@@ -57,6 +57,13 @@
     <!-- Render Views -->
     <router-view/>
 
+    <!-- Loading Screen -->
+    <div class="loading d-flex justify-content-center v-centered" v-if="showLoading">
+      <div class="spinner-grow text-info" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+
       <!-- Footer -->
     <div class="footer" v-if="$route.meta.showFooter">
       <div class="footer-main bg-light">
@@ -120,6 +127,19 @@
   height: 2.5rem
   margin-right: 0.7rem
 
+.loading
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  z-index: 1030
+  position: fixed
+  background: #fbfbfb
+
+.spinner-grow
+  height: 4rem
+  width: 4rem
+
 .footer
   margin-top: 4rem
 
@@ -152,7 +172,6 @@
   text-decoration: none
   color: #3097D1
 
-
 </style>
 
 <script>
@@ -165,17 +184,21 @@ export default {
     worksItem,
 
     scrollY: 0,
-    menuVisible: false
+    menuVisible: false,
+    showLoading: false
   }),
 
   mounted () {
     window.addEventListener('scroll', this.onScroll, false)
-
     this.onScroll()
+
+    this.$root.$on('loading', (state) => this.showLoading = state)
   },
 
   beforeDestroy () {
     window.removeEventListener('scroll', this.onScroll, false)
+
+    this.$root.$on('loading')
   },
 
   computed: {
